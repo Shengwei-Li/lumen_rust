@@ -1,0 +1,4 @@
+# Link the C runtime into the exe: without this it imports VCRUNTIME140.dll,
+# which a fresh Windows install does not have.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

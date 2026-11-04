@@ -7,7 +7,7 @@
   <a href="https://github.com/Shengwei-Li/lumen_rust/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/Shengwei-Li/lumen_rust?style=flat-square&label=release&labelColor=111111&color=FF3B00"></a>
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-111111?style=flat-square&labelColor=111111&color=3a3a38">
   <img alt="Rust" src="https://img.shields.io/badge/Rust-2024-111111?style=flat-square&labelColor=111111&color=3a3a38">
-  <img alt="Size" src="https://img.shields.io/badge/exe-5.9%20MB-111111?style=flat-square&labelColor=111111&color=3a3a38">
+  <img alt="Size" src="https://img.shields.io/badge/exe-6.1%20MB-111111?style=flat-square&labelColor=111111&color=3a3a38">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-111111?style=flat-square&labelColor=111111&color=3a3a38"></a>
 </p>
 
@@ -35,15 +35,16 @@ The recording bar, the countdown and the main window never appear in the video.
 
 ## Download
 
-[`Lumen.exe`](https://github.com/Shengwei-Li/lumen_rust/releases/latest) from Releases, 5.9 MB.
-Nothing to install. Windows 10 (1903) or later, 64-bit. The exe is not code-signed, so
+[`Lumen.exe`](https://github.com/Shengwei-Li/lumen_rust/releases/latest) from Releases, 6.1 MB.
+Nothing to install: the C runtime is linked in, and everything else it uses ships with Windows.
+Windows 10 (1903) or later, 64-bit. The exe is not code-signed, so
 SmartScreen may ask for confirmation on first run: choose **More info**, then **Run anyway**.
 
 ## Compared with the C# version
 
 | | C# | Rust |
 |---|---|---|
-| Download | 48 MB installer | one 5.9 MB `Lumen.exe` |
+| Download | 48 MB installer | one 6.1 MB `Lumen.exe` |
 | Runtime | .NET 8 (bundled) | none |
 | Clean audio | aligned to the video after recording | mixed in live, clock-locked |
 | Stop to saved file | seconds | about 0.1 s |
